@@ -5,3 +5,7 @@ dxafinalreport.html: dxafinalreport.Rmd code/04_render_dxa_report.R \
 	
 	Rscript code/04_render_dxa_report.r
 	
+.PHONY: install
+install: 
+  Rscript -e "renv::restore(prompt=FALSE)"
+	
