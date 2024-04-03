@@ -19,10 +19,15 @@
 `dxafinalreport.Rmd`
 - compiles an html report with the table and graphs provided in the code folder
 
+## Synchronize Packages
+This project uses the Renv R package management system to manage packages and ensure reproducibility. All packages are listed in `renv.lock`. The makefile includes a `make install` rule for ease of package synchronization across machines. To synchronize your system run the follwoing command on the command line: 
+
+`make install`
+
 ## steps to generate the report
 On my local machine, the relative file path starts at "finaldata550". This is the directory that contains the code, output, and clean_simulated_data folders, the makefile and the report. Remotely, this is the finaldata550 repository. In order to generate the report, you must use the makefile to build the report from the command line with the command "make dxafinalreport.html". In order to build this report, you will need to use the outputs from each of the listed scripts above (code/01-4_xyz.R), which can be found in the outputs folder. The code you will use on the commandline is:
 
-Make dxafinalreport.html
+`Make dxafinalreport.html`
 
 ## Contents of the report
 This report contains one table and 2 graphs. The data used is DXA body composition data. This data given is simulated data and is in no way, shape, form representative of any person. Any resemblance to a specific person's measurements is purely coincidental. Table 1 contains demographic statistics. The 1st graph demonstrates the change in overall adipose tissue percentage over 1 year across participants. The last graph stratifies the general trend across participants in central mass adiposity change over a year by  key central obesity tendencies(in this case, Android and Gynoid percent fat tissue).
