@@ -28,7 +28,7 @@ This should build properly.
 ## Build DXA final report
 In the makefile, there is a rule denoting the sources necessary to build this cohesive report. There is a folder in the repository called `report`, and this is where the output of the report will be stored after building the image within the container. You will use the same code to do this as you would to build the docker image. 
 
-`docker build -t dxafinal .`
+`docker build -t dxaimage .`
 
 
 ## Synchronize Packages

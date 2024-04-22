@@ -298,16 +298,6 @@
       ],
       "Hash": "e8a1e41acf02548751f45c718d55aa6a"
     },
-    "curl": {
-      "Package": "curl",
-      "Version": "5.2.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "411ca2c03b1ce5f548345d2fc2685f7a"
-    },
     "data.table": {
       "Package": "data.table",
       "Version": "1.15.4",
