@@ -10,7 +10,7 @@ code/04_render_dxa_report.r: dxafinalreport.Rmd
 
 .PHONY: install
 install: 
-  Rscript -e "renv::restore(prompt=FALSE)"
+	Rscript -e "renv::restore(prompt=FALSE)"
 	
 	#Docker-associated rules
 PROJECTFILES= 	output/table_one.rds \
@@ -25,3 +25,9 @@ PROJECTFILES= 	output/table_one.rds \
 dxaimage: Dockerfile $(PROJECTFILES) $(RENVFILES) 
 	docker build -t dxaimage . 
 	touch $@
+	
+	# rule to build final report in Docker
+report/dxafinalreport.html: dxaimage 
+    CURRENT_DIR := $(shell pwd)
+    docker run -it -v "$(CURRENT_DIR)/dxafinalreport:/report/dxafinalreport" dxaimage bash
+
