@@ -28,6 +28,4 @@ dxaimage: Dockerfile $(PROJECTFILES) $(RENVFILES)
 	
 	# rule to build final report in Docker
 report/dxafinalreport.html: dxaimage 
-    CURRENT_DIR := $(shell pwd)
-    docker run -it -v "$(CURRENT_DIR)/dxafinalreport:/report/dxafinalreport" dxaimage bash
-
+    docker run -it -v "$$(pwd)/dxafinalreport:/report/dxafinalreport" dxaimage bash
