@@ -1,0 +1,26 @@
+{
+    "id": "07C7F414",
+    "path": "~/data550/finaldata550/dockerfile",
+    "project_path": "dockerfile",
+    "type": "dockerfile",
+    "hash": "2993620266",
+    "contents": "",
+    "dirty": false,
+    "created": 1713789163453.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "12,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1713880819,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1713880819354,
+    "read_only": false,
+    "read_only_alternatives": []
+}
