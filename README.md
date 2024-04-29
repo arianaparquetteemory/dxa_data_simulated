@@ -22,7 +22,7 @@
 ## Build Docker Image
 This project can be built in a containerized environment for reproducibility produces. We are using docker to do so. To build this image, on the command line, use the following command:
 
-`docker build -t image .`
+`docker build -t dxaimage .`
 This should build properly.
 
 ## Build DXA final report

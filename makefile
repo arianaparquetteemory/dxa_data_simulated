@@ -28,4 +28,4 @@ dxaimage: Dockerfile $(PROJECTFILES) $(RENVFILES)
 	
 	# rule to build final report in Docker
 report/dxafinalreport.html: dxaimage 
-    docker run -it -v "$$(pwd)/dxafinalreport:/report/dxafinalreport" dxaimage bash
+    docker run -v "$$(pwd)/dxafinalreport:/report/dxafinalreport" dxaimage
